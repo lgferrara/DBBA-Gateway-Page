@@ -3,49 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirect Webpage</title>
+  <title>DBBA Gateway Webpage</title>
   <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <style>
     body, html {
       height: 100%;
       margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      font-family: 'Cinzel', serif;
+    }
+    .title {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 44px;
+      font-weight: bold;
+      color: #143D74;
     }
     .container {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      width: 100%;
+    }
+    .row {
+      width: 100%;
     }
     .icon {
       width: 100%;
       height: auto;
-      margin: 10px auto;
+      margin: 10px 0;
       transition: transform 0.3s;
+      border: 3px solid #143D74;
+      border-radius: 15px;
     }
     .icon:hover {
       transform: scale(1.1);
+    }
+    @media (max-width: 768px) {
+      .title {
+        font-size: 28px;
+      }
+      .icon {
+        width: 80%;
+      }
+    }
+    @media (max-width: 576px) {
+      .title {
+        font-size: 24px;
+      }
+      .icon {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
 <div class="container">
+  <!-- Title for the gateway page -->
+  <h1 class="title">Visita i nostri siti</h1>
+
   <div class="row">
-    <div class="col-10 col-lg-4">
+    <div class="col-12 col-sm-6 col-lg-4">
       <a href="https://www.uniba.it/it" target="_blank">
         <img src="uniba.jpeg" alt="Uniba" class="icon">
       </a>
     </div>
-    <div class="col-10 col-lg-4">
+    <div class="col-12 col-sm-6 col-lg-4">
       <a href="https://www.uniba.it/it/ricerca/dipartimenti/dbba" target="_blank">
         <img src="dbba.jpeg" alt="DBBA" class="icon">
       </a>
     </div>
-    <div class="col-10 col-lg-4">
+    <div class="col-12 col-sm-6 col-lg-4">
       <a href="https://www.uniba.it/it/ricerca/dipartimenti/dbba/didattica/corsi-di-laurea" target="_blank">
         <img src="corsi_di_laurea.jpeg" alt="CdLs" class="icon">
       </a>
